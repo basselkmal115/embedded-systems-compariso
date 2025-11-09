@@ -1,0 +1,84 @@
+body {
+    font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+    background-color: #f2f4f8;
+    margin: 0;
+    padding: 0;
+    color: #222;
+}
+
+header {
+    background-color: #1a2b48;
+    color: white;
+    padding: 40px 0;
+    text-align: center;
+    box-shadow: 0 3px 8px rgba(0, 0, 0, 0.3);
+}
+
+header h1 {
+    font-size: 2.6em;
+    margin-bottom: 10px;
+}
+
+header p {
+    font-size: 1.2em;
+    opacity: 0.85;
+}
+
+.comparison {
+    margin: 60px auto;
+    width: 90%;
+    max-width: 1200px;
+}
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+    background: white;
+    border-radius: 10px;
+    overflow: hidden;
+    box-shadow: 0 0 15px rgba(0, 0, 0, 0.1);
+}
+
+th, td {
+    border: 1px solid #ccc;
+    padding: 18px;
+    text-align: left;
+    vertical-align: top;
+    line-height: 1.5;
+}
+
+th {
+    background-color: #264b7f;
+    color: white;
+    font-size: 1.1em;
+}
+
+tr:nth-child(even) {
+    background-color: #f8f9fc;
+}
+
+button {
+    display: block;
+    margin: 30px auto;
+    padding: 12px 30px;
+    font-size: 17px;
+    background-color: #1a2b48;
+    color: white;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+button:hover {
+    background-color: #385b9d;
+}
+
+footer {
+    text-align: center;
+    padding: 25px;
+    background-color: #1a2b48;
+    color: white;
+    font-size: 0.9em;
+    margin-top: 50px;
+}

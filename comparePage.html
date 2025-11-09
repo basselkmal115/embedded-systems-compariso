@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>AVR vs ARM vs System on Chip</title>
+    <link rel="stylesheet" href="compareDesign.css">
+</head>
+<body>
+    <header>
+        <h1>AVR vs ARM vs System on Chip (SoC)</h1>
+        <p>A deep technical comparison of three core embedded system technologies.</p>
+    </header>
+
+    <section class="comparison">
+        <table>
+            <thead>
+                <tr>
+                    <th>Aspect</th>
+                    <th>AVR</th>
+                    <th>ARM</th>
+                    <th>System on Chip (SoC)</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>Definition</td>
+                    <td>AVR is a family of 8-bit and 16-bit microcontrollers developed by Atmel. They are designed for simple control and automation tasks.</td>
+                    <td>ARM is a family of 32-bit and 64-bit RISC-based processors known for efficiency and scalability across embedded and mobile systems.</td>
+                    <td>SoC is a complete system integrated into a single chip that includes CPU, memory, peripherals, GPU, and communication interfaces.</td>
+                </tr>
+
+                <tr>
+                    <td>Architecture</td>
+                    <td>Modified Harvard architecture, simple pipeline, limited parallelism.</td>
+                    <td>Advanced RISC architecture supporting pipelines, multiple cores, and cache memory.</td>
+                    <td>Usually based on ARM or RISC-V cores; includes multiple subsystems integrated together.</td>
+                </tr>
+
+                <tr>
+                    <td>Performance</td>
+                    <td>Low performance — suitable for basic control systems, small timing operations, and low-speed peripherals.</td>
+                    <td>Medium to high performance — supports multitasking, RTOS, and advanced signal processing.</td>
+                    <td>Very high performance — supports AI processing, multimedia, and communication stacks like Wi-Fi and Bluetooth.</td>
+                </tr>
+
+                <tr>
+                    <td>Power Efficiency</td>
+                    <td>Extremely power efficient; ideal for portable and battery-operated systems.</td>
+                    <td>Highly optimized for power efficiency using dynamic frequency scaling and sleep modes.</td>
+                    <td>Designed for balance — integrates advanced power management units to minimize heat and consumption.</td>
+                </tr>
+
+                <tr>
+                    <td>Cost</td>
+                    <td>Very cheap; great for learning, DIY projects, and small-scale automation.</td>
+                    <td>Moderately priced depending on core type (Cortex-M vs Cortex-A).</td>
+                    <td>Expensive due to integration of multiple high-end modules and advanced manufacturing processes.</td>
+                </tr>
+
+                <tr>
+                    <td>Development Tools</td>
+                    <td>Atmel Studio, Arduino IDE, or PlatformIO. Easy to use for beginners.</td>
+                    <td>Keil uVision, STM32CubeIDE, or ARM DS-5. Requires more experience.</td>
+                    <td>Linux-based SDKs, Yocto Project, or Android NDK depending on the SoC vendor.</td>
+                </tr>
+
+                <tr>
+                    <td>Applications</td>
+                    <td>LED control, sensors, small robots, and basic automation.</td>
+                    <td>Industrial control, drones, automotive systems, and IoT devices.</td>
+                    <td>Smartphones, tablets, advanced IoT devices, and AI edge computing.</td>
+                </tr>
+
+                <tr>
+                    <td>Examples</td>
+                    <td>ATmega328P (Arduino Uno), ATtiny85.</td>
+                    <td>ARM Cortex-M3 (STM32), Cortex-A53 (Raspberry Pi).</td>
+                    <td>Raspberry Pi 4, Apple M1, Qualcomm Snapdragon, ESP32.</td>
+                </tr>
+            </tbody>
+        </table>
+        <button id="highlightBtn">Highlight Key Differences</button>
+    </section>
+
+    <footer>
+        <p>Created by Bassel Wael — Embedded Systems Engineer</p>
+    </footer>
+
+    <script src="compareLogic.js"></script>
+</body>
+</html>
